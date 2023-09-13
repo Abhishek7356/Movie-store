@@ -18,7 +18,8 @@ header img {
     /* background-color: #24456a; */
     background: rgb(59,55,123);
     background: linear-gradient(90deg, rgba(59,55,123,1) 0%, rgba(15,18,62,1) 100%, rgba(0,212,255,1) 100%);
-    border-radius: 3px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     padding: 30px 20px;
 }
 
@@ -37,9 +38,9 @@ header img {
     flex-direction: column;
     padding: 5px 15px;
 }
-.about p{
+/* .about p{
     font-size: 19px;
-}
+} */
 
 #content {
     display: none;
@@ -57,6 +58,8 @@ header img {
     }
 
     .movieContainer img {
+        width: 100%;
+        height: auto;
         display: block;
         margin: auto;
     }

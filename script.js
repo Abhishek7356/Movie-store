@@ -20,9 +20,11 @@ function displayData(data) {
     document.getElementById('title').innerHTML = `${data.Title}`;
     document.getElementById('year').innerHTML = `Year : ${data.Year}`;
     document.getElementById('director').innerHTML = `Director : ${data.Director}`;
-    document.getElementById('actors').innerHTML = `Actors : ${data.Actors}`;
+    document.getElementById('actors').innerHTML = `Cast : ${data.Actors}`;
     document.getElementById('genre').innerHTML = `Genre : ${data.Genre}`;
-    document.getElementById('rating').innerHTML = `Ratings : ${data.Ratings[0].Value}`;
+    document.getElementById('collection').innerHTML = `BoxOffice : ${data.BoxOffice}`;
     document.getElementById('plot').innerHTML = `Plot : <br/>${data.Plot}`;
+    document.getElementById('awards').innerHTML = `Awards : <br/>${data.Awards}`;
+    document.getElementById('imdb').innerHTML = `<i class="fa-solid fa-star me-1" style="color: #e9f637;"></i>${data.imdbRating}`;
     document.getElementById('content').style.display = 'block';
 }

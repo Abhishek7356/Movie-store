@@ -65,25 +65,27 @@
                     <div class="movieContainer">
                         <div class="d-flex ">
                             <input id="searchName" type="text"
-                                class="form-control bg-light shadow border border-1 border-primary"
+                                class="rounded-pill form-control bg-light shadow border border-1 border-primary"
                                 placeholder="Search Movie here...">
-                            <button onclick="displayMovie()" class="btn btn-primary ms-1">Search</button>
+                            <button onclick="displayMovie()" class="btn btn-primary rounded-pill shadow ms-1">Search</button>
                         </div>
                         <div id="content">
                             <div class="mt-5 movieDetails">
                                 <img id="poster" class="shadow-lg"
                                     src="https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg"
                                     alt="">
-                                <div style="font-family: 'Archivo Narrow';" class="about fw-bold">
-                                    <h1 style="font-family: 'Aboreto';" id="title" class="my-3 text-shadow text-center fw-bold"></h1>
+                                <div style="font-family: 'Archivo Narrow';" class="about ">
+                                    <h2 style="font-family: 'Aboreto';" id="title" class="my-3 text-shadow text-center fw-bold">ffff</h2>
+                                    <p id="imdb" class=" text-center"></p>
                                     <p id="year" class=""></p>
                                     <p id="director" class=""></p>
                                     <p id="actors" class=""></p>
                                     <p id="genre" class=""></p>
-                                    <p id="rating" class=""></p>
+                                    <p id="collection" class=""></p>
                                 </div>
                             </div>
-                            <p style="font-family: 'Archivo Narrow'; font-size: 19px;" id="plot" class="mt-2 fw-bold"></p>
+                            <p style="font-family: 'Archivo Narrow';" id="plot" class="mt-2 "></p>
+                            <p style="font-family: 'Archivo Narrow';" id="awards" class=" "></p>
                         </div>
                         <div>
                             <h5 id="notFound" style="display: none;" class="text-danger text-center mt-5">Movie not found !</h5>
