@@ -3,7 +3,7 @@ const searchMovie = document.getElementById('searchName');
 const APIKEY = 'ef7bc171';
 
 function displayMovie() {
-    fetch(`http://www.omdbapi.com/?t=${searchMovie.value}&apikey=${APIKEY}`)
+    fetch(`https://www.omdbapi.com/?t=${searchMovie.value}&apikey=${APIKEY}`)
         .then((res) => res.json())
         .then((data) => displayData(data))
         .catch((err) => {
