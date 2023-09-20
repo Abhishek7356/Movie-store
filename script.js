@@ -3,9 +3,13 @@ const searchMovie = document.getElementById('searchName');
 const APIKEY = 'ef7bc171';
 
 function displayMovie() {
+    document.getElementById('spin').style.display = 'block';
     fetch(`https://www.omdbapi.com/?t=${searchMovie.value}&apikey=${APIKEY}`)
         .then((res) => res.json())
-        .then((data) => displayData(data))
+        .then((data) => {
+            document.getElementById('spin').style.display = 'none';
+            displayData(data)}
+            )
         .catch((err) => {
             alert(err)
             document.getElementById('content').style.display = 'none';

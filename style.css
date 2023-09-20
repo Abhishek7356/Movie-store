@@ -7,20 +7,38 @@
 }
 
 header {
-    background-color: #002d60;
+    background-color: #002d607c;
+}
+
+
+body::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    min-height: 110vh;
+    width: 100%;
+    background-image: url('https://wallpaperaccess.com/full/6060259.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    filter: blur(18px);
+    -webkit-filter: blur(18px);
 }
 
 header img {
     border-radius: 50%;
 }
 
+
 .movieContainer {
     /* background-color: #24456a; */
-    background: rgb(59,55,123);
-    background: linear-gradient(90deg, rgba(59,55,123,1) 0%, rgba(15,18,62,1) 100%, rgba(0,212,255,1) 100%);
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    padding: 30px 20px;
+    /* background: rgba(34, 34, 35, 0.442); */
+    /* background: linear-gradient(90deg, rgba(59, 55, 123, 0.479) 0%, rgba(15, 18, 62, 0.567) 100%, rgba(0,212,255,1) 100%); */
+    /* border-radius: 10px; */
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+    padding: 10px 20px;
+    /* border: 1px solid blue; */
 }
 
 .movieContainer img {
@@ -38,11 +56,21 @@ header img {
     flex-direction: column;
     padding: 5px 15px;
 }
+
 /* .about p{
     font-size: 19px;
 } */
 
 #content {
+    display: none;
+    margin-top: 15px;
+    padding: 10px;
+    background: rgba(34, 34, 35, 0.538);
+    /* background: linear-gradient(90deg, rgba(59, 55, 123, 0.479) 0%, rgba(15, 18, 62, 0.567) 100%, rgba(0,212,255,1) 100%); */
+    border-radius: 10px;
+}
+
+#spin{
     display: none;
 }
 
@@ -52,15 +80,21 @@ header img {
     }
 
     .movieContainer {
-        background-color: #173456;
+        /* background-color: #17345634; */
         border-radius: 3px;
         padding: 30px 20px;
+        /* border: 1px solid white; */
     }
 
     .movieContainer img {
-        width: 100%;
+        width: 60%;
         height: auto;
         display: block;
         margin: auto;
     }
+    body::before {
+        min-height: 160vh;
+
+    }
+    
 }
